@@ -1,3 +1,4 @@
+import { MoveRight } from 'lucide-react';
 import Container from './_components/container';
 import { Button } from './_components/ui/button';
 import { Card, CardDescription, CardHeader, CardTitle } from './_components/ui/card';
@@ -114,6 +115,20 @@ export default function Home() {
                 <CardDescription>Tips on financial management for developers.</CardDescription>
               </CardHeader>
             </Card>
+          </div>
+        </section>
+
+        <section className="flex flex-col items-center justify-center space-y-4 py-28">
+          <h1 className="text-3xl font-bold">Support us!</h1>
+          <p className="text-sm text-zinc-400">
+            DevTrek empowers developers worldwide with resources, tutorials, and best practices. Our work is made
+            possible by community support.
+          </p>
+          <div className="flex gap-2">
+            <Button variant="outline">Learn more</Button>
+            <Button className="mr-2 font-bold">
+              Donate now <MoveRight />
+            </Button>
           </div>
         </section>
 
