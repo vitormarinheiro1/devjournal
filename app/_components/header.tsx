@@ -17,7 +17,7 @@ const Header = () => {
 
         {/* DESKTOP */}
         <div>
-          <Button>
+          <Button className="font-semibold">
             <Image src={GoogleICO} alt="Google Icon" width={20} height={20} className="mr-1" />
             Continue with Google
           </Button>
