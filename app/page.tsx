@@ -1,3 +1,9 @@
+import { Button } from './_components/ui/button';
+
 export default function Home() {
-  return <div>{/* TODO: install shadcn */}</div>;
+  return (
+    <div>
+      <Button>BTN SHADCN</Button>
+    </div>
+  );
 }
