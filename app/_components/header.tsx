@@ -1,11 +1,21 @@
+'use client';
 import Link from 'next/link';
 import { Card, CardContent } from './ui/card';
 import { Code2, MenuIcon } from 'lucide-react';
 import { Button } from './ui/button';
 import Image from 'next/image';
 import GoogleICO from '../../public/google.svg';
+import { signIn, signOut } from 'next-auth/react';
 
 const Header = () => {
+  async function handleLogin() {
+    await signIn();
+  }
+
+  async function handleLogout() {
+    await signOut();
+  }
+
   return (
     <Card>
       <CardContent className="flex flex-row items-center justify-between p-5">
@@ -16,8 +26,11 @@ const Header = () => {
         </Link>
 
         {/* DESKTOP */}
+
+        {/* TODO: Use useSession for authenticated and unauthenticated users. */}
+
         <div>
-          <Button className="font-semibold">
+          <Button className="font-semibold" onClick={handleLogin}>
             <Image src={GoogleICO} alt="Google Icon" width={20} height={20} className="mr-1" />
             Continue with Google
           </Button>
