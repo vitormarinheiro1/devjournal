@@ -1,9 +1,7 @@
-import { Button } from './_components/ui/button';
-
 export default function Home() {
   return (
-    <div>
-      <Button>BTN SHADCN</Button>
-    </div>
+    <main>
+      <h1 className="mb-2 text-2xl font-medium">Home</h1>
+    </main>
   );
 }
