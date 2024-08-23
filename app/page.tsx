@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <Container>
       <main>
+        {/* BLOG */}
         <section className="space-y-6">
           <h1 className="mt-16 text-2xl font-medium text-yellow-400">React 19: New Features with Code Examples</h1>
-
           <div>
             <h2>🚀 React Compiler</h2>
             <p>
@@ -33,8 +33,9 @@ export default function Home() {
           <Button className="bg-yellow-400 font-bold text-black hover:bg-yellow-300">Learn More</Button>
         </section>
 
+        {/* ABOUT */}
         <section className="mt-24">
-          <h1 className="mb-8 px-2 text-2xl font-medium">Learn about</h1>
+          <h1 className="mb-4 px-2 text-2xl font-medium">Learn about</h1>
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
             <Card>
               <CardHeader>
