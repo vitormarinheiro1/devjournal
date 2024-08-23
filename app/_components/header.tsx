@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Card, CardContent } from './ui/card';
-import { MenuIcon } from 'lucide-react';
+import { Code2, MenuIcon } from 'lucide-react';
 import { Button } from './ui/button';
 import Image from 'next/image';
 import GoogleICO from '../../public/google.svg';
@@ -10,7 +10,9 @@ const Header = () => {
     <Card>
       <CardContent className="flex flex-row items-center justify-between p-5">
         <Link href="/">
-          <h1 className="text-2xl font-medium">Devtrek</h1>
+          <h1 className="flex flex-row items-center gap-2 text-2xl font-medium">
+            <Code2 size={30} /> DevTrek
+          </h1>
         </Link>
 
         {/* DESKTOP */}
