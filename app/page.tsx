@@ -120,7 +120,7 @@ export default function Home() {
 
         <section className="flex flex-col items-center justify-center space-y-4 py-28">
           <h1 className="text-3xl font-bold">Support us!</h1>
-          <p className="text-sm text-zinc-400">
+          <p className="ml-4 text-sm text-zinc-400">
             DevTrek empowers developers worldwide with resources, tutorials, and best practices. Our work is made
             possible by community support.
           </p>
@@ -132,7 +132,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* TODO: SECTION SUPPORT US */}
         {/* TODO: FOOTER */}
       </main>
     </Container>
