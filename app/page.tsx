@@ -131,8 +131,6 @@ export default function Home() {
             </Button>
           </div>
         </section>
-
-        {/* TODO: FOOTER */}
       </main>
     </Container>
   );
